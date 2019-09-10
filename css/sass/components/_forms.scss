@@ -1,0 +1,236 @@
+.search-lg {
+    @media (max-width:991px) {
+        order: 2;
+        width: 600px;
+        margin: 25px 0;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.search {
+    @media (max-width:991px) {
+        width: 100%;
+    }
+
+    .search-container {
+        width: 262px;
+        height: 50px;
+        position: relative;
+
+        @media (max-width:991px) {
+            width: 100%;
+        }
+    }
+
+    .search-input {
+        border-bottom: 1px solid #e2e2e2;
+        width: 100%;
+        height: 50px;
+        padding-right: 10px;
+        padding-left: 40px;
+        font-size: 14.07px;
+        color: #b0b0b0;
+        @include transition(all 0.3s ease-in-out);
+
+        &::placeholder {
+            font-size: 14.07px;
+            color: #b0b0b0;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $maincolor;
+        }
+
+        @media (max-width:767px) {
+            border: 1px solid #e2e2e2;
+
+            &:focus {
+                border: 1px solid $seccolor;
+            }
+        }
+    }
+
+
+    .search-btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 9px;
+        top: 0;
+        background-color: transparent;
+
+        path {
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            path {
+                fill: $seccolor;
+            }
+        }
+
+
+    }
+
+}
+
+.news {
+
+
+    .news-container {
+        width: 482px;
+        height: 50px;
+        position: relative;
+
+        @media (max-width:1199px) {
+            width: 400px;
+        }
+
+        @media (max-width:991px) {
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+        }
+    }
+
+    .news-input {
+        border-bottom: 1px solid #e2e2e2;
+        width: 100%;
+        height: 50px;
+        padding-right: 10px;
+        padding-left: 40px;
+        font-size: 14.07px;
+        color: #b0b0b0;
+        @include transition(all 0.3s ease-in-out);
+        background-color: transparent;
+
+        &::placeholder {
+            font-size: 14.07px;
+            color: #b0b0b0;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $maincolor;
+        }
+    }
+
+
+    .news-btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 10px;
+        top: 0;
+        background-color: transparent;
+
+        path {
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            path {
+                fill: $seccolor;
+            }
+        }
+
+
+    }
+
+}
+
+html[dir="ltr"] .news {
+
+
+    .news-input {
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+
+
+    .news-btn {
+        right: 10px;
+        left: auto;
+    }
+
+}
+
+html[dir="ltr"] .search {
+
+    .search-input {
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+
+    .search-btn {
+        right: 9px;
+        left: auto;
+    }
+}
+
+.search-pop {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    background-color: rgba($maincolor, 0.97);
+    z-index: 9999;
+    left: 0;
+    top: 0;
+
+    .search {
+        margin: 200px auto;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 25px;
+        cursor: pointer;
+        left: 0px;
+        margin-top: 25px;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 50%;
+        line-height: 25px;
+        padding-top: 8px;
+
+        span {
+            width: 60%;
+            top: 10px;
+            height: 2px;
+            background-color: #ccc;
+            transform: rotate(-45deg);
+            position: absolute;
+
+            &:last-child {
+                transform: rotate(45deg);
+            }
+        }
+
+        .cls {
+
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

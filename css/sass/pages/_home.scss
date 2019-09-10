@@ -1,0 +1,110 @@
+.categories {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+    .cat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: none;
+        background: $seccolor;
+        width: 222px;
+        height: 70px;
+        padding: 0 20px;
+        font-family: itc-md;
+        color: #fff;
+        font-size: 18px;
+        margin-left: 8px;
+        @include transition(all 0.3s ease-in-out);
+
+        @media (max-width: 991px) {
+            padding: 0 10px;
+        }
+
+        img {
+            width: auto;
+        }
+
+        &:before {
+            background: -moz-linear-gradient(0deg, rgb(132, 52, 127) 0%, rgb(178, 101, 167) 100%);
+            background: -webkit-linear-gradient(0deg, rgb(132, 52, 127) 0%, rgb(178, 101, 167) 100%);
+            background: -ms-linear-gradient(0deg, rgb(132, 52, 127) 0%, rgb(178, 101, 167) 100%);
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: auto !important;
+            margin: auto !important;
+        }
+    }
+
+
+}
+
+html[dir="ltr"] .categories {
+    .cat {
+        margin-right: 8px;
+        margin-left: 0;
+
+        &:last-child {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin: auto !important;
+        }
+    }
+
+
+}
+
+.banners-sec {
+    margin-top: 40px;
+
+    .banner {
+        display: block;
+        overflow: hidden;
+
+        @media (max-width: 991px) {
+            margin-bottom: 15px;
+        }
+
+        img {
+            @include transition(all 0.7s ease-in-out);
+            width: 100%;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.banner-sec {
+    margin-top: 40px;
+
+    .banner {
+        display: block;
+        overflow: hidden;
+
+        img {
+            @include transition(all 0.7s ease-in-out);
+            width: 100%;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
