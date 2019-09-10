@@ -257,6 +257,7 @@ html[dir="ltr"] .topbar {
         width: 40px;
         height: 25px;
         justify-content: space-around;
+        margin-left: 25px;
 
         span {
             height: 2px;
@@ -270,15 +271,25 @@ html[dir="ltr"] .topbar {
             }
         }
     }
+
+    @media (max-width: 767px) {
+        margin-left: 0;
+    }
 }
 
 html [dir="ltr"] .menu-btn {
     @media (max-width: 991px) {
+        margin-right: 25px;
+        margin-left: 0;
 
         span {
             margin-right: 0;
             margin-left: auto;
         }
+    }
+
+    @media (max-width: 767px) {
+        margin-right: 0;
     }
 }
 

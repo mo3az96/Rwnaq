@@ -1182,6 +1182,7 @@ html[dir=ltr] .topbar .feature-name {
     width: 40px;
     height: 25px;
     justify-content: space-around;
+    margin-left: 25px;
   }
   .menu-btn span {
     height: 2px;
@@ -1194,11 +1195,25 @@ html[dir=ltr] .topbar .feature-name {
     margin-bottom: 0;
   }
 }
+@media (max-width: 767px) {
+  .menu-btn {
+    margin-left: 0;
+  }
+}
 
 @media (max-width: 991px) {
+  html [dir=ltr] .menu-btn {
+    margin-right: 25px;
+    margin-left: 0;
+  }
   html [dir=ltr] .menu-btn span {
     margin-right: 0;
     margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  html [dir=ltr] .menu-btn {
+    margin-right: 0;
   }
 }
 
