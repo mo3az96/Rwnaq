@@ -1,5 +1,11 @@
 $(document).ready(function () {
-
+    $(".lds-ring").fadeOut(1000, function () {
+        $(this).parent().hide();
+        $('body').css("overflow", "auto");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1);
+    });
     // Mobile Side Menu 
     $('.menu-btn').click(function () {
         $('.xs-nav').show();
