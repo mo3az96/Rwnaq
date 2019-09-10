@@ -21,6 +21,7 @@ body {
 html {
     scrollbar-width: thin;
     scrollbar-color: rgba($maincolor, 0.75) rgba(#535353, 0.2);
+    overflow-x: hidden;
 }
 
 .container {
