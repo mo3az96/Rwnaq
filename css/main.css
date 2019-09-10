@@ -911,14 +911,14 @@ html[dir=ltr] .product:hover .item-img .overlay-btn.add-fav-btn {
   transition: 0.4s;
 }
 .moaccordion:after {
-  content: "+";
-  margin-left: 5px;
-  font-size: 18px;
-  font-family: Frutiger-bold;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 13px;
   float: left;
 }
 .moaccordion.active:after {
-  content: "−";
+  content: "";
 }
 
 html[dir=ltr] .moaccordion:after {
