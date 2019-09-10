@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".lds-ring").fadeOut(1000, function () {
         $(this).parent().hide();
-        $('body').css("overflow", "auto");
+        $('body').css("overflow-y", "auto");
         $('html, body').animate({
             scrollTop: 0
         }, 1);
@@ -11,22 +11,22 @@ $(document).ready(function () {
         $('.xs-nav').show();
         $('.main-xs-nav').addClass('inscreen');
         $('.main-xs-nav').removeClass('outscreen');
-        $('.page-body').css("overflow", "hidden");
-        $('html').css("overflow", "hidden");
+        $('.page-body').css("overflow-y", "hidden");
+        $('html').css("overflow-y", "hidden");
     });
     $('.xs-nav').click(function () {
         $('.xs-nav').fadeOut(500);
         $('.main-xs-nav').addClass('outscreen');
         $('.main-xs-nav').removeClass('inscreen');
-        $('body').css("overflow", "auto");
-        $('html').css("overflow", "auto");
+        $('body').css("overflow-y", "auto");
+        $('html').css("overflow-y", "auto");
     });
     $('.closebtn').click(function () {
         $('.xs-nav').fadeOut(500);
         $('.main-xs-nav').addClass('outscreen');
         $('.main-xs-nav').removeClass('inscreen');
-        $('body').css("overflow", "auto");
-        $('html').css("overflow", "auto");
+        $('body').css("overflow-y", "auto");
+        $('html').css("overflow-y", "auto");
     });
     $(".main-xs-nav").click(function (e) {
         e.stopPropagation();
@@ -34,13 +34,13 @@ $(document).ready(function () {
     // Mobile Search 
     $('.search-icon').click(function () {
         $('.search-pop').fadeIn(500);
-        $('body').css("overflow", "hidden");
-        $('html').css("overflow", "hidden");
+        $('body').css("overflow-y", "hidden");
+        $('html').css("overflow-y", "hidden");
     });
     $('.search-pop').click(function () {
         $('.search-pop').fadeOut(500);
-        $('body').css("overflow", "auto");
-        $('html').css("overflow", "auto");
+        $('body').css("overflow-y", "auto");
+        $('html').css("overflow-y", "auto");
     });
     $(".search").click(function (e) {
         e.stopPropagation();

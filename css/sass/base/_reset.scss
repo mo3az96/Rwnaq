@@ -1,6 +1,7 @@
 body {
     font-family: itc;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     &::-webkit-scrollbar {
         background-color: rgba(#535353, 0.2);
