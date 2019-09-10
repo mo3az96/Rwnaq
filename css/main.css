@@ -1559,8 +1559,8 @@ html[dir=ltr] .social .social-link:nth-of-type(6) {
 }
 @media (max-width: 767px) {
   .copyrights {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     flex-direction: column;
   }
 }
