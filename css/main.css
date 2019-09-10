@@ -1213,7 +1213,7 @@ html[dir=ltr] .topbar .feature-name {
 }
 @media (max-width: 767px) {
   html [dir=ltr] .menu-btn {
-    margin-right: 0;
+    margin-right: 0px;
   }
 }
 
