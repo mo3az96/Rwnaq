@@ -147,6 +147,7 @@ html[dir="ltr"] .topbar {
     align-items: center;
     justify-content: flex-end;
     width: 262px;
+    z-index: 10;
 
     @media (max-width:991px) {
         order: 3;
@@ -290,11 +291,14 @@ html [dir="ltr"] .menu-btn {
     }
 }
 
-// .sign_div{
-//     path{
-//         @include transition(all 0.3s ease-in-out);
-//     }
-//     &:hover{
-//         path{fill: $seccolor;}
-//     }
-// }
+.sign_div {
+    path {
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        path {
+            fill: $seccolor;
+        }
+    }
+}

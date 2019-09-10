@@ -4,6 +4,8 @@
     @media (max-width:991px) {
         display: none;
     }
+
+    overflow: hidden;
 }
 
 .nav-links {
@@ -16,6 +18,8 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0 50px;
+        height: auto;
+        justify-content: flex-start;
     }
 
     .navlink-li {
@@ -53,6 +57,10 @@
                 }
             }
         }
+
+        @media (max-width:991px) {
+            margin-bottom: 12px;
+        }
     }
 
     .navlink {
@@ -80,6 +88,7 @@ html[dir="ltr"] .nav-links {
         flex-direction: column;
         align-items: flex-start;
         padding: 0 50px;
+        justify-content: flex-start;
     }
 
     .navlink-li {
@@ -121,7 +130,7 @@ html[dir="ltr"] .nav-links {
     width: 100%;
     height: 100%;
     background-color: rgba($maincolor, 0.75);
-    z-index: 9;
+    z-index: 11;
 
     .main-xs-nav {
         display: flex;
@@ -131,7 +140,8 @@ html[dir="ltr"] .nav-links {
         width: 260px;
         height: 100%;
         overflow: auto;
-        padding: 80px 0;
+        padding: 100px 0;
+
         text-align: right;
     }
 

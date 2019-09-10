@@ -43,14 +43,6 @@
         &:focus {
             border-bottom: 1px solid $maincolor;
         }
-
-        @media (max-width:767px) {
-            border: 1px solid #e2e2e2;
-
-            &:focus {
-                border: 1px solid $seccolor;
-            }
-        }
     }
 
 
@@ -183,7 +175,7 @@ html[dir="ltr"] .search {
     height: 100%;
     position: fixed;
     justify-content: center;
-    background-color: rgba($maincolor, 0.97);
+    background-color: rgba(#fff, 0.97);
     z-index: 9999;
     left: 0;
     top: 0;

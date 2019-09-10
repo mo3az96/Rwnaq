@@ -22,6 +22,10 @@
             padding: 0 10px;
         }
 
+        @media (max-width: 360px) {
+            width: 150px;
+        }
+
         img {
             width: auto;
         }

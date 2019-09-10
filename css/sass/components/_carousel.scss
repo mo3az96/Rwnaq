@@ -323,6 +323,11 @@ html[dir="ltr"] .product {
     border-left: none;
     border-right: 1px solid #ededed;
 
+    @media (max-width:991px) {
+        margin: auto;
+        border: none;
+    }
+
     .item-img {
         .overlay-btn {
             &.add-cart-btn {

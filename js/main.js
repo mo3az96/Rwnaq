@@ -49,8 +49,8 @@ $(document).ready(function () {
     if ($(window).width() < 768) {
         $(".categories").addClass("owl-carousel");
         $('.categories').owlCarousel({
-            items: 1,
-            margin: 10,
+            items: 2,
+            margin: 5,
             autoplay: false,
             autoplayTimeout: 2500,
             rtl: true,
