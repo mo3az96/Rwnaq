@@ -401,8 +401,9 @@ html[dir=ltr] .search .search-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 48px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nav-links {
     flex-direction: column;
     align-items: flex-start;
@@ -412,8 +413,6 @@ html[dir=ltr] .search .search-btn {
 .nav-links .navlink-li {
   display: flex;
   align-items: center;
-  margin-top: 6px;
-  margin-bottom: 16px;
   position: relative;
 }
 .nav-links .navlink-li::after {
@@ -429,7 +428,7 @@ html[dir=ltr] .search .search-btn {
     margin: 0 12px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nav-links .navlink-li::after {
     position: absolute;
     top: 50%;
@@ -441,7 +440,7 @@ html[dir=ltr] .search .search-btn {
 .nav-links .navlink-li:last-child::after {
   display: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nav-links .navlink-li:last-child::after {
     display: block;
   }
@@ -458,7 +457,7 @@ html[dir=ltr] .search .search-btn {
 .nav-links .navlink:hover {
   color: #f4ccee;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .nav-links .navlink {
     color: #e2b039;
   }
@@ -469,7 +468,7 @@ html[dir=ltr] .nav-links {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   html[dir=ltr] .nav-links {
     flex-direction: column;
     align-items: flex-start;
@@ -479,8 +478,6 @@ html[dir=ltr] .nav-links {
 html[dir=ltr] .nav-links .navlink-li {
   display: flex;
   align-items: center;
-  margin-top: 6px;
-  margin-bottom: 16px;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -488,7 +485,7 @@ html[dir=ltr] .nav-links .navlink-li {
     margin: 0 12px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   html[dir=ltr] .nav-links .navlink-li::after {
     position: absolute;
     left: -24px;
@@ -499,7 +496,7 @@ html[dir=ltr] .nav-links .navlink-li {
 html[dir=ltr] .nav-links .navlink-li:last-child::after {
   display: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   html[dir=ltr] .nav-links .navlink-li:last-child::after {
     display: block;
   }
@@ -1434,7 +1431,7 @@ html[dir=ltr] .footer .foot-nav {
 
 .sec-footer {
   display: flex;
-  margin-top: 56px;
+  margin-top: -16px;
   align-items: flex-end;
 }
 @media (max-width: 991px) {
@@ -1442,6 +1439,7 @@ html[dir=ltr] .footer .foot-nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 56px;
   }
 }
 @media (max-width: 767px) {
@@ -1561,7 +1559,7 @@ html[dir=ltr] .social .social-link:nth-of-type(6) {
 }
 @media (max-width: 767px) {
   .copyrights {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
     flex-direction: column;
   }

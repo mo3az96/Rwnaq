@@ -119,13 +119,14 @@ html[dir="ltr"] .footer {
 
 .sec-footer {
     display: flex;
-    margin-top: 56px;
+    margin-top: -16px;
     align-items: flex-end;
 
     @media (max-width:991px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 56px;
     }
 
     @media (max-width:767px) {
@@ -250,7 +251,7 @@ html[dir="ltr"] .social {
     justify-content: space-between;
 
     @media (max-width:767px) {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-bottom: 20px;
         flex-direction: column;
     }
